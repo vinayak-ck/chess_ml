@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+
+# big / generated files (the dataset goes in a GitHub Release, not in git)
+data/
+runs/
+*.pgn
+*.pgn.zst
+*.npz
+
+# models/ is tracked on purpose: finished weights (~41 MB) can be committed

@@ -1,0 +1,8 @@
+# PyTorch is NOT listed here on purpose: install it separately with the CUDA index (see README.md).
+chess
+numpy
+pandas
+tqdm
+requests
+zstandard
+matplotlib
