@@ -13,7 +13,7 @@ from tqdm import tqdm
 # >>> EDIT THIS after you upload the files. Examples:
 #   GitHub release : https://github.com/<user>/<repo>/releases/download/data-v1
 #   Hugging Face   : https://huggingface.co/datasets/<user>/<name>/resolve/main
-DEFAULT_BASE_URL = "https://github.com/vinayak-ck/chess_ml/releases/tag/data-v1"
+DEFAULT_BASE_URL = "https://github.com/vinayak-ck/chess_ml/releases/download/data-v1"
 
 
 def download(url: str, dest: Path) -> None:

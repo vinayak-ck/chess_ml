@@ -50,7 +50,7 @@ def test_split_on_device(device, rows=5000):
     if not path.exists():
         print("skip real-data check (data/encoded/val.npz not found)")
         return
-    d = np.load(path)
+    d = np.load(path, allow_pickle=True)
     split = GpuSplit(str(path), device, limit=rows)
     ids = torch.arange(len(split), device=device)
     x, y = split.get(ids)

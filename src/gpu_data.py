@@ -36,7 +36,7 @@ def unpack_gpu(bb, castle, ep, wtm):
 
 class GpuSplit:
     def __init__(self, path, device, limit=None):
-        d = np.load(path)
+        d = np.load(path, allow_pickle=True)
         sl = slice(0, limit)
         bb = np.ascontiguousarray(d["bb"][sl])
         self.bb = torch.from_numpy(bb.view(np.int64)).to(device)           # same bits, signed view
